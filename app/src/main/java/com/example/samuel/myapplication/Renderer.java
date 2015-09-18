@@ -77,7 +77,7 @@ public class Renderer extends RajawaliRenderer implements SensorEventListener{
         getCurrentCamera().setFarPlane(10000);
         getCurrentCamera().setNearPlane(0.2);
         // getCurrentCamera().setFieldOfView(60);
-        getCurrentCamera().setZ(800.0);
+        getCurrentCamera().setZ(5.0);
         getCurrentCamera().setX(0.0);
         getCurrentCamera().setY(0.0);
         getCurrentCamera().setUpAxis(-1.0f, 0.0f, 0.0f);
@@ -86,7 +86,7 @@ public class Renderer extends RajawaliRenderer implements SensorEventListener{
 
         getCurrentCamera().setLookAt(0.0, 0.0, 0.0);
 
-
+//Change R.raw.XXX to R.raw.name_of_new_obj
         objParser = new LoaderOBJ(mContext.getResources(),
                 mTextureManager, R.raw.facesmall_obj);
 
